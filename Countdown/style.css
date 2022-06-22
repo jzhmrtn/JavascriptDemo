@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+
+:root {
+    --num-size: 7rem;
+    --brdr-rad: 25px;
+    --dhms-color: rgba(252, 217, 217, 0.2); /*DaysHoursMinutesSeconds */
+    --brdr-sha: 0px 12px 5px rgba(110, 97, 97, 0.5);
+    --num-marg: 10px 0.5rem;
+    --num-pad: var(--num-pad);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Joan", serif;
+    margin: 0;
+    color: rgb(238, 240, 210);
+    overflow-y: hidden;
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 12rem;
+    background-color: rgba(117, 112, 112, 0.6);
+}
+
+.container {
+    display: flex;  
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.cont {
+    min-width: 12rem;
+    max-width: 15rem;
+}
+
+.daysTxt {
+    font-size: var(--num-size);
+    background-color: var(--dhms-color);
+    border-bottom-left-radius: var(--brdr-rad);
+    border-top-left-radius: var(--brdr-rad);
+    padding: var(--num-pad);
+    padding-bottom: 1rem;
+    line-height: 2;
+    margin: var(--num-marg);
+    box-shadow: var(--brdr-sha);
+}
+
+.secondsTxt {
+    font-size: var(--num-size);
+    background-color: var(--dhms-color);
+    border-bottom-right-radius: var(--brdr-rad);
+    border-top-right-radius: var(--brdr-rad);
+    padding: var(--num-pad);
+    padding-bottom: 1rem;
+    border: none;
+    line-height: 2;
+    margin: var(--num-marg);
+    box-shadow: var(--brdr-sha);
+}
+
+.mainTxt {
+    font-size: var(--num-size);
+    background-color: var(--dhms-color);
+    padding: var(--num-pad);
+    padding-bottom: 1rem;
+    border: none;
+    line-height: 2;
+    margin: var(--num-marg);
+    box-shadow: var(--brdr-sha);
+}
+
+.container span {
+    font-size: 1.8rem;
+}
+
+.about {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
